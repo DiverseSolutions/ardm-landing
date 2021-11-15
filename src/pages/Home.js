@@ -53,6 +53,9 @@ export default function Home() {
                 </div>
             </div>
             <Roadmap />
+            <div className='py-10 bg-red lg:hidden bg-ardmMainOne'>
+                <iframe className=' h-44 w-full' src="https://youtu.be/oYYB1WRvnWA" frameborder="0"></iframe>
+            </div>
             <EcoSystem />
             <div id='teamMembers' className='bg-ardmMainOne w-screen py-10'>
                 <div className='container mx-auto'>
