@@ -97,7 +97,7 @@ export default function EcoSystem() {
                     <img className={'w-10/12 rotate-0 object-contain'} src={LayerSrc} alt="layerPic" />
                 </div>
                 <div className='w-3/5 md:w-1/2 flex justify-end'>
-                    <div className='md:w-9/12'>
+                    <div className='md:w-9/12 mt-10'>
                         <h2 className='text-5xl font-semibold'>Экосистем</h2>
                         <div className='flex flex-col my-10'>
                             <div className='flex '>

@@ -8,6 +8,11 @@ import ProfileTwo from '../assets/profile-2.jpg';
 import ProfileThree from '../assets/profile-3.jpg';
 import ProfileFour from '../assets/profile-4.jpg';
 import ProfileFive from '../assets/profile-5.jpg';
+import ProfileSix from '../assets/profile-6.jpg';
+import ProfileSeven from '../assets/profile-7.jpg';
+import ProfileEight from '../assets/profile-8.jpg';
+import ProfileNine from '../assets/profile-9.jpg';
+import ProfileTen from '../assets/profile-10.jpg';
 import VisionOneImgSrc from '../assets/vision-1.png'
 import VisionTwoImgSrc from '../assets/vision-2.png'
 import VisionThreeImgSrc from '../assets/vision-3.png'
@@ -53,8 +58,16 @@ export default function Home() {
                 </div>
             </div>
             <Roadmap />
-            <div className='py-10 bg-red lg:hidden bg-ardmMainOne'>
-                <iframe className=' h-44 w-full' src="https://youtu.be/oYYB1WRvnWA" frameborder="0"></iframe>
+            <div className='bg-ardmMainOne py-10'>
+                <div className='container mx-auto flex justify-center'>
+                    <div className='w-full h-72 lg:w-1/2 lg:h-96 transform transition scale-100 hover:scale-110'
+                        style={{
+                            boxShadow: '#2AD5FC 0px 10px 30px -10px'
+                        }}
+                    >
+                        <iframe className='w-full h-full object-contain' src="https://www.youtube.com/embed/oYYB1WRvnWA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture " allowfullscreen></iframe>
+                    </div>
+                </div>
             </div>
             <EcoSystem />
             <div id='teamMembers' className='bg-ardmMainOne w-screen py-10'>
@@ -160,7 +173,7 @@ const teamMembers = [
         rolePosition: 'Төслийн ерөнхий удирдагч'
     },
     {
-        name: 'Г.Мөнх-Од',
+        name: 'Г. Мөнх-Од',
         src: ProfileTwo,
         rolePosition: 'Төслийн ахлах хөгжүүлэгч'
     },
@@ -178,6 +191,31 @@ const teamMembers = [
         name: 'А. Ундрал',
         src: ProfileFive,
         rolePosition: 'Хамтын ажиллагаа'
+    },
+    {
+        name: 'М. Болортоль',
+        src: ProfileSix,
+        rolePosition: 'Хөгжүүлэгч'
+    },
+    {
+        name: 'Б. Баттулга',
+        src: ProfileSeven,
+        rolePosition: 'Хөгжүүлэгч'
+    },
+    {
+        name: 'А. Амартүвшин',
+        src: ProfileEight,
+        rolePosition: 'Блокчэйн судалгааны баг'
+    },
+    {
+        name: 'Г. Ууганбат',
+        src: ProfileNine,
+        rolePosition: 'Хөгжүүлэгч'
+    },
+    {
+        name: 'Г. Нарангариг ',
+        src: ProfileTen,
+        rolePosition: 'Хөгжүүлэгч'
     },
 ]
 
