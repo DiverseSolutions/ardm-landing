@@ -74,10 +74,6 @@ export default function EcoSystem() {
         }
     }
 
-    function isSafari() {
-        let is_safari = navigator.userAgent.toLowerCase().indexOf('safari/') > -1;
-        return is_safari;
-      }
 
     return (
         <div id='ecoSystem' className='bg-ardmMainTwo py-10 lg:py-44'>
