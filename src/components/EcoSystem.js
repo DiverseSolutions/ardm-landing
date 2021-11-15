@@ -74,6 +74,11 @@ export default function EcoSystem() {
         }
     }
 
+    function isSafari() {
+        let is_safari = navigator.userAgent.toLowerCase().indexOf('safari/') > -1;
+        return is_safari;
+      }
+
     return (
         <div id='ecoSystem' className='bg-ardmMainTwo lg:py-44'>
             <h2 className='text-2xl font-semibold pl-4 lg:hidden'>Экосистем</h2>
@@ -88,8 +93,8 @@ export default function EcoSystem() {
                 <img src={LayerSrc} alt="layerPic" />
             </div>
             <div className='container mx-auto hidden lg:flex items-start '>
-                <div className='w-2/5 md:w-1/2 flex justify-center'>
-                    <img className='w-10/12' src={LayerSrc} alt="layerPic" />
+                <div className='w-2/5 md:w-1/2 flex justify-center items-start'>
+                    <img className={'w-10/12 rotate-0 object-contain'} src={LayerSrc} alt="layerPic" />
                 </div>
                 <div className='w-3/5 md:w-1/2 flex justify-end'>
                     <div className='md:w-9/12'>

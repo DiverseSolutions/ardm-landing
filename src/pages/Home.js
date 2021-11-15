@@ -43,7 +43,7 @@ export default function Home() {
             <ProblemSolvingSection />
             <div id='ardm' className='py-10 lg:py-20 w-screen bg-ardmMainTwo'>
                 <div className='container mx-auto flex flex-col-reverse lg:flex-row items-center'>
-                    <div className='w-full mt-10 lg:mt-0 lg:w-1/2 flex justify-end'>
+                    <div className='w-full mt-10 lg:mt-0 lg:w-1/2 flex justify-center'>
                         <img className='' src={MovingPictureSrc} alt="" />
                     </div>
                     <div className='w-full lg:w-1/2 lg:pl-20 px-3'>
@@ -61,7 +61,7 @@ export default function Home() {
                         {
                             teamMembers.map((member, index) => (
                                 <div key={index} className='w-full md:w-1/2 lg:w-1/5 flex flex-col justify-center items-center py-5 lg:py-14'>
-                                    <div className='w-2/3 rounded-full ' style={{ boxShadow: '5px 3px 3px 0px #2AD5FC' }}>
+                                    <div className='w-2/3 lg:w-3/5 rounded-full ' style={{ boxShadow: '5px 3px 3px 0px #2AD5FC' }}>
                                         <img className='rounded-full' src={member.src} alt="member" />
                                     </div>
                                     <div className='mt-5 text-center'>
@@ -94,8 +94,8 @@ export default function Home() {
                 <div className='container mx-auto flex flex-col justify-center items-center'>
                     <h2 className='text-center font-semibold text-4xl lg:text-6xl'>АрдМааний Тархалт</h2>
                     <div className='flex flex-col lg:flex-row justify-center py-10 px-3 lg:px-0 lg:py-20'>
-                        <img className='py-5 lg:py-10 w-full lg:w-1/2' src={PieChartOne} alt="" />
-                        <img className='py-5 lg:py-10 w-full lg:w-1/2' src={PieChartTwo} alt="" />
+                        <img className='py-5 lg:py-10 object-contain w-full lg:w-1/2' src={PieChartOne} alt="" />
+                        <img className='py-5 lg:py-10 object-contain w-full lg:w-1/2' src={PieChartTwo} alt="" />
                     </div>
                 </div>
             </div>
@@ -127,8 +127,7 @@ export default function Home() {
                 </div>
             </div>
             <div className='py-14 bg-ardmMainOne'>
-                <h2 className='text-center font-semibold text-4xl'>Socials</h2>
-                <div className='flex justify-center mt-10'>
+                <div className='flex flex-wrap justify-center mt-10'>
                     {
                         socials.map((social, index) => (
                             <a href={social.url} target='_blank'>
