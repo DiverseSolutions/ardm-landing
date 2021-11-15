@@ -58,7 +58,7 @@ export default function Home() {
                 </div>
             </div>
             <Roadmap />
-            <div className='bg-ardmMainOne py-10'>
+            <div className='bg-ardmMainOne'>
                 <div className='container mx-auto flex justify-center'>
                     <div className='w-full h-72 lg:w-1/2 lg:h-96 transform transition lg:hover:scale-110'
                         style={{

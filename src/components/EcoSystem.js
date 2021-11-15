@@ -80,7 +80,7 @@ export default function EcoSystem() {
       }
 
     return (
-        <div id='ecoSystem' className='bg-ardmMainTwo lg:py-44'>
+        <div id='ecoSystem' className='bg-ardmMainTwo py-10 lg:py-44'>
             <h2 className='text-2xl font-semibold pl-4 lg:hidden'>Экосистем</h2>
             <div className='lg:hidden mt-5'>
                 <MobileTab
