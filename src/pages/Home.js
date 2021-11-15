@@ -60,7 +60,7 @@ export default function Home() {
             <Roadmap />
             <div className='bg-ardmMainOne py-10'>
                 <div className='container mx-auto flex justify-center'>
-                    <div className='w-full h-72 lg:w-1/2 lg:h-96 transform transition scale-100 hover:scale-110'
+                    <div className='w-full h-72 lg:w-1/2 lg:h-96 transform transition lg:hover:scale-110'
                         style={{
                             boxShadow: '#2AD5FC 0px 10px 30px -10px'
                         }}
