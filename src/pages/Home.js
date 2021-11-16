@@ -76,7 +76,7 @@ export default function Home() {
                     <div className='flex flex-wrap justify-center mt-5 lg:mt-10'>
                         {
                             teamMembers.map((member, index) => (
-                                <div key={index} className='w-full md:w-1/2 lg:w-1/5 flex flex-col justify-center items-center py-5 lg:py-14'>
+                                <div key={index} className='w-full md:w-1/2 lg:w-1/3 xl:w-1/5 flex flex-col justify-center items-center py-5 lg:py-14'>
                                     <div className='w-2/3 lg:w-3/5 rounded-full ' style={{ boxShadow: '5px 3px 3px 0px #2AD5FC' }}>
                                         <img className='rounded-full' src={member.src} alt="member" />
                                     </div>
