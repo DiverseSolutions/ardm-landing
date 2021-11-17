@@ -26,6 +26,7 @@ import IconTwitter from '../assets/icon-twitter.png'
 import IconDiscord from '../assets/discord.png'
 import MovingPictureSrc from '../assets/movingPicture.webp'
 import RightArrow from '../assets/right-arrow.png'
+import IntroVideos from '../components/IntroVideos'
 
 export default function Home() {
 
@@ -58,21 +59,11 @@ export default function Home() {
                 </div>
             </div>
             <Roadmap />
-            <div className='bg-ardmMainOne'>
-                <div className='container mx-auto flex justify-center'>
-                    <div className='w-full h-72 lg:w-1/2 lg:h-96 transform transition lg:hover:scale-110'
-                        style={{
-                            boxShadow: '#2AD5FC 0px 10px 30px -10px'
-                        }}
-                    >
-                        <iframe className='w-full h-full object-contain' src="https://www.youtube.com/embed/oYYB1WRvnWA" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture " allowfullscreen></iframe>
-                    </div>
-                </div>
-            </div>
+            <IntroVideos />
             <EcoSystem />
             <div id='teamMembers' className='bg-ardmMainOne w-screen py-10'>
                 <div className='container mx-auto'>
-                    <h2 className='lg:text-5xl lg:text-left text-4xl font-semibold text-center'>Менежментийн баг</h2>
+                    <h2 className='lg:text-5xl lg:text-left text-3xl font-semibold text-center'>Менежментийн баг</h2>
                     <div className='flex flex-wrap justify-center mt-5 lg:mt-10'>
                         {
                             teamMembers.map((member, index) => (
@@ -146,7 +137,7 @@ export default function Home() {
                 <div className='flex flex-wrap justify-center mt-10'>
                     {
                         socials.map((social, index) => (
-                            <a href={social.url} target='_blank'>
+                            <a key={index} href={social.url} target='_blank'>
                                 <div key={index} className='w-14 mx-2 hover:opacity-90 lg:mx-8 rounded-full h-14 p-3 flex justify-center items-center cursor-pointer bg-ardmYellow'>
                                     <img className='' src={social.src} alt="social" />
                                 </div>
@@ -226,7 +217,7 @@ const ourVision = [
         text: 'Гадаслах хөтөлбөрөөр хадгаламжаас илүү өгөөж хүртэх боломжтой. Эзэмшигч нь АрдМааний токены эзэмшлээ гадаслах буюу түгжсэнээр өгөөж хүртэх боломжтой.'
     },
     {
-        src: VisionTwoImgSrc,
+        src: VisionFourImgSrc,
         title: 'Олон сүлжээт холбоо',
         text: 'АрдМааний нь Солана, Этериум, Байнанс Смарт Чэйн, Терра болон Полигон сүлжээнүүдэд зэрэг оршиж, сүлжээ хооронд шилжих боломжтой.'
     },
@@ -236,7 +227,7 @@ const ourVision = [
         text: 'Монгол блокчэйн төслүүдийг дэлхийн тавцанд гаргах DEX байх болно. Гадаад орны хөрөнгө оруулагчид Монгол блокчэйн төслүүдэд хөрөнгө оруулах хамгийн хурдан, хялбар зам байх болно.'
     },
     {
-        src: VisionFourImgSrc,
+        src: VisionTwoImgSrc,
         title: 'DEFI: Санхүүгийн шинэ эрин',
         text: 'АрдМааний эзэмшигчид бүх шинэчлэлт, сайжруулалтанд саналаа өгч оролцох боломжтой.'
     },

@@ -2,3 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 html {scroll-behavior: smooth;}
+
+.scrollable-container {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-x: auto;
+}

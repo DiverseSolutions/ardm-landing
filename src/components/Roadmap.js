@@ -111,16 +111,16 @@ export default function Roadmap() {
                     <div style={{ height: 600 }} className='relative flex justify-end bottom-2 left-28  w-14 border-r-4 border-t-4 rounded-tr-full border-ardmYellow '>
                         <div className='absolute top-4 text-xl font-light h-96 flex flex-col justify-evenly' style={{ left: 46 }}>
                             <div onClick={() => setActiveIndex(0)} className='flex items-center cursor-pointer py-3'>
-                                <div className={`w-4 h-4 flex-shrink-0 rounded-full  cursor-pointer flex justify-center items-center ${activeIndex == 0 ? 'bg-white' : 'bg-gray-500'}`}><div className={`w-2 h-2 ${activeIndex == 0 ? 'bg-ardmYellow' : 'bg-white'}  rounded-full`}></div></div>
-                                <div className={`w-44 ml-5 ${activeIndex == 0 ? 'text-ardmYellow' : 'text-gray-500'}`}>{tabs[0].tabName}</div>
+                                <div className={`w-4 h-4 flex-shrink-0 rounded-full  cursor-pointer flex justify-center items-center ${activeIndex === 0 ? 'bg-white' : 'bg-gray-500'}`}><div className={`w-2 h-2 ${activeIndex === 0 ? 'bg-ardmYellow' : 'bg-white'}  rounded-full`}></div></div>
+                                <div className={`w-44 ml-5 ${activeIndex === 0 ? 'text-ardmYellow' : 'text-gray-500'}`}>{tabs[0].tabName}</div>
                             </div>
                             <div onClick={() => setActiveIndex(1)} className='flex items-center cursor-pointer py-3'>
-                                <div className={`w-4 h-4 flex-shrink-0 rounded-full  cursor-pointer flex justify-center items-center ${activeIndex == 1 ? 'bg-white' : 'bg-gray-500'}`}><div className={`w-2 h-2 ${activeIndex == 1 ? 'bg-ardmYellow' : 'bg-white'}  rounded-full`}></div></div>
-                                <div className={`w-44 ml-5 ${activeIndex == 1 ? 'text-ardmYellow' : 'text-gray-500'}`}>{tabs[1].tabName}</div>
+                                <div className={`w-4 h-4 flex-shrink-0 rounded-full  cursor-pointer flex justify-center items-center ${activeIndex === 1 ? 'bg-white' : 'bg-gray-500'}`}><div className={`w-2 h-2 ${activeIndex === 1 ? 'bg-ardmYellow' : 'bg-white'}  rounded-full`}></div></div>
+                                <div className={`w-44 ml-5 ${activeIndex === 1 ? 'text-ardmYellow' : 'text-gray-500'}`}>{tabs[1].tabName}</div>
                             </div>
                             <div onClick={() => setActiveIndex(2)} className='flex items-center cursor-pointer py-3'>
-                                <div className={`w-4 h-4 flex-shrink-0 rounded-full  cursor-pointer flex justify-center items-center ${activeIndex == 2 ? 'bg-white' : 'bg-gray-500'}`}><div className={`w-2 h-2 ${activeIndex == 2 ? 'bg-ardmYellow' : 'bg-white'}  rounded-full`}></div></div>
-                                <div className={`w-44 ml-5 ${activeIndex == 2 ? 'text-ardmYellow' : 'text-gray-500'}`}>{tabs[2].tabName}</div>
+                                <div className={`w-4 h-4 flex-shrink-0 rounded-full  cursor-pointer flex justify-center items-center ${activeIndex === 2 ? 'bg-white' : 'bg-gray-500'}`}><div className={`w-2 h-2 ${activeIndex === 2 ? 'bg-ardmYellow' : 'bg-white'}  rounded-full`}></div></div>
+                                <div className={`w-44 ml-5 ${activeIndex === 2 ? 'text-ardmYellow' : 'text-gray-500'}`}>{tabs[2].tabName}</div>
                             </div>
                         </div>
                     </div>

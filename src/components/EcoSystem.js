@@ -97,9 +97,9 @@ export default function EcoSystem() {
                         <h2 className='text-5xl font-semibold'>Экосистем</h2>
                         <div className='flex flex-col my-10'>
                             <div className='flex '>
-                                <div onClick={() => setActiveIndex(0)} className={`cursor-pointer mr-5 xl:mr-16  border-b-2 text-xl py-2 pr-6 ${activeIndex == 0 ? 'border-ardmYellow text-white' : 'text-ardmYellow border-opacity-0'} `}>LAYER 1</div>
-                                <div onClick={() => setActiveIndex(1)} className={`cursor-pointer mr-5 xl:mr-16  border-b-2 text-xl py-2 pr-6 ${activeIndex == 1 ? 'border-ardmYellow text-white' : 'text-ardmYellow border-opacity-0'} `}>LAYER 2</div>
-                                <div onClick={() => setActiveIndex(2)} className={`cursor-pointer mr-5  xl:mr-16 border-b-2 text-xl py-2 pr-6 ${activeIndex == 2 ? 'border-ardmYellow text-white' : 'text-ardmYellow border-opacity-0'} `}>LAYER 3</div>
+                                <div onClick={() => setActiveIndex(0)} className={`cursor-pointer mr-5 xl:mr-16  border-b-2 text-xl py-2 pr-6 ${activeIndex === 0 ? 'border-ardmYellow text-white' : 'text-ardmYellow border-opacity-0'} `}>LAYER 1</div>
+                                <div onClick={() => setActiveIndex(1)} className={`cursor-pointer mr-5 xl:mr-16  border-b-2 text-xl py-2 pr-6 ${activeIndex === 1 ? 'border-ardmYellow text-white' : 'text-ardmYellow border-opacity-0'} `}>LAYER 2</div>
+                                <div onClick={() => setActiveIndex(2)} className={`cursor-pointer mr-5  xl:mr-16 border-b-2 text-xl py-2 pr-6 ${activeIndex === 2 ? 'border-ardmYellow text-white' : 'text-ardmYellow border-opacity-0'} `}>LAYER 3</div>
                             </div>
                         </div>
                         <div className='leading-10 font-thin'>
