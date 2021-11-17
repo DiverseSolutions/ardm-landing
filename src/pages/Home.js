@@ -1,31 +1,7 @@
 import React from 'react'
-import HomeOneSrc from '../assets/home-1.jpg'
 import EcoSystem from '../components/EcoSystem'
 import ProblemSolvingSection from '../components/ProblemSolvingSection'
 import Roadmap from '../components/Roadmap'
-import ProfileOne from '../assets/profile-1.jpg';
-import ProfileTwo from '../assets/profile-2.jpg';
-import ProfileThree from '../assets/profile-3.jpg';
-import ProfileFour from '../assets/profile-4.jpg';
-import ProfileFive from '../assets/profile-5.jpg';
-import ProfileSix from '../assets/profile-6.jpg';
-import ProfileSeven from '../assets/profile-7.jpg';
-import ProfileEight from '../assets/profile-8.jpg';
-import ProfileNine from '../assets/profile-9.jpg';
-import ProfileTen from '../assets/profile-10.jpg';
-import VisionOneImgSrc from '../assets/vision-1.png'
-import VisionTwoImgSrc from '../assets/vision-2.png'
-import VisionThreeImgSrc from '../assets/vision-3.png'
-import VisionFourImgSrc from '../assets/vision-4.png'
-import PieChartOne from '../assets/pie-chart-1.png'
-import PieChartTwo from '../assets/pie-chart-2.png'
-import IconFb from '../assets/icon-fb.png'
-import IconIg from '../assets/icon-ig.png'
-import IconTelegram from '../assets/icon-telegram.png'
-import IconTwitter from '../assets/icon-twitter.png'
-import IconDiscord from '../assets/discord.png'
-import MovingPictureSrc from '../assets/movingPicture.webp'
-import RightArrow from '../assets/right-arrow.png'
 import IntroVideos from '../components/IntroVideos'
 
 export default function Home() {
@@ -33,24 +9,24 @@ export default function Home() {
     return (
         <div className='text-white pt-22'>
             <div className=''>
-                <img src={HomeOneSrc} className='w-screen h-screen object-cover lg:hidden' style={{ objectPosition: '73% top' }} alt="" />
-                <img src={HomeOneSrc} height='200' width='300' className='w-screen bg-ardmMainOne hidden lg:block'alt="" />
+                <img src='/home-1.jpg' className='w-screen h-screen object-cover lg:hidden' style={{ objectPosition: '73% top' }} alt="" />
+                <img src='/home-1.jpg' height='200' width='300' className='w-screen bg-ardmMainOne hidden lg:block'alt="" />
                 <div className=' lg:hidden flex h-screen flex-col justify-center absolute top-0'>
                     <h2 className='px-5 font-medium text-3xl md:text-4xl'>Монголын анхны DAO төсөл</h2>
                     <p className='px-5 my-6 mb-10 text-xl md:text-2xl font-thin'>Таны төвлөрсөн бус бие даасан санхүүгийн оролцооны гарц</p>
-                    <a href='/litepaper.pdf' className='bg-white py-4 text-center text-ardmBlack font-bold flex justify-center items-center cursor-pointer text-lg absolute bottom-0 w-screen'>Урьдчилсан ТТЭЗҮ <div className='w-4 ml-3'><img src={RightArrow} alt="" /></div></a>
+                    <a href='/litepaper.pdf' className='bg-white py-4 text-center text-ardmBlack font-bold flex justify-center items-center cursor-pointer text-lg absolute bottom-0 w-screen'>Урьдчилсан ТТЭЗҮ <div className='w-4 ml-3'><img src='/right-arrow.png' alt="" /></div></a>
                 </div>
                 <div style={{height: 'calc(100vw * 0.46)'}} className='container hidden lg:flex  flex-col justify-center absolute top-0 left-1/2 transform -translate-x-1/2 '>
                     <h2 className='font-medium text-6xl'>Монголын анхны DAO төсөл</h2>
                     <p className='my-6 mb-10 text-xl font-thin'>Таны төвлөрсөн бус бие даасан санхүүгийн оролцооны гарц</p>
-                    <a href='/litepaper.pdf' className='bg-white flex items-center rounded-lg py-2 px-5 text-ardmBlack font-semibold cursor-pointer text-lg self-start'>Урьдчилсан ТТЭЗҮ<div className='w-4 ml-3'><img src={RightArrow} alt="" /></div></a>
+                    <a href='/litepaper.pdf' className='bg-white flex items-center rounded-lg py-2 px-5 text-ardmBlack font-semibold cursor-pointer text-lg self-start'>Урьдчилсан ТТЭЗҮ<div className='w-4 ml-3'><img src='/right-arrow.png' alt="" /></div></a>
                 </div>
             </div>
             <ProblemSolvingSection />
             <div id='ardm' className='py-10 lg:py-20 w-screen bg-ardmMainTwo'>
                 <div className='container mx-auto flex flex-col-reverse lg:flex-row items-center'>
                     <div className='w-full mt-10 lg:mt-0 lg:w-1/2 flex justify-center'>
-                        <img className='' src={MovingPictureSrc} alt="" />
+                        <img className='' src='/movingPicture.webp' alt="" />
                     </div>
                     <div className='w-full lg:w-1/2 lg:pl-20 px-3'>
                         <h2 className='lg:font-light text-2xl text-center lg:text-left lg:text-4xl'>AрдМааний гэж юу вэ?</h2>
@@ -101,8 +77,8 @@ export default function Home() {
                 <div className='container mx-auto flex flex-col justify-center items-center'>
                     <h2 className='text-center font-semibold text-4xl lg:text-6xl'>АрдМааний Тархалт</h2>
                     <div className='flex flex-col lg:flex-row justify-center py-10 px-3 lg:px-0 lg:py-20'>
-                        <img className='py-5 lg:py-10 object-contain w-full lg:w-1/2' src={PieChartOne} alt="" />
-                        <img className='py-5 lg:py-10 object-contain w-full lg:w-1/2' src={PieChartTwo} alt="" />
+                        <img className='py-5 lg:py-10 object-contain w-full lg:w-1/2' src='/pie-chart-1.png' alt="" />
+                        <img className='py-5 lg:py-10 object-contain w-full lg:w-1/2' src='/pie-chart-2.png' alt="" />
                     </div>
                 </div>
             </div>
@@ -160,74 +136,74 @@ export default function Home() {
 const teamMembers = [
     {
         name: 'М. Энх-Амгалан',
-        src: ProfileOne,
+        src: '/profile-1.jpg',
         rolePosition: 'Төслийн ерөнхий удирдагч'
     },
     {
         name: 'Г. Мөнх-Од',
-        src: ProfileTwo,
+        src: '/profile-2.jpg',
         rolePosition: 'Төслийн ахлах хөгжүүлэгч'
     },
     {
         name: 'Д. Анхбаясгалан',
-        src: ProfileThree,
+        src: '/profile-3.jpg',
         rolePosition: 'Төслийн инновацийн блокчэйн ахлах'
     },
     {
         name: 'М. Энx-Улирал',
-        src: ProfileFour,
+        src: '/profile-4.jpg',
         rolePosition: 'Блокчэйн судалгааны ахлах'
     },
     {
         name: 'А. Ундрал',
-        src: ProfileFive,
+        src: '/profile-5.jpg',
         rolePosition: 'Хамтын ажиллагаа'
     },
     {
         name: 'М. Болортоль',
-        src: ProfileSix,
+        src: '/profile-6.jpg',
         rolePosition: 'Хөгжүүлэгч'
     },
     {
         name: 'Б. Баттулга',
-        src: ProfileSeven,
+        src: '/profile-7.jpg',
         rolePosition: 'Хөгжүүлэгч'
     },
     {
         name: 'А. Амартүвшин',
-        src: ProfileEight,
+        src: '/profile-8.jpg',
         rolePosition: 'Блокчэйн судалгааны баг'
     },
     {
         name: 'Г. Ууганбат',
-        src: ProfileNine,
+        src: '/profile-9.jpg',
         rolePosition: 'Хөгжүүлэгч'
     },
     {
         name: 'Г. Нарангариг ',
-        src: ProfileTen,
+        src: '/profile-10.jpg',
         rolePosition: 'Хөгжүүлэгч'
     },
 ]
 
 const ourVision = [
     {
-        src: VisionOneImgSrc,
+        src: '/vision-1.png',
         title: 'Гадаслах (Staking)',
         text: 'Гадаслах хөтөлбөрөөр хадгаламжаас илүү өгөөж хүртэх боломжтой. Эзэмшигч нь АрдМааний токены эзэмшлээ гадаслах буюу түгжсэнээр өгөөж хүртэх боломжтой.'
     },
     {
-        src: VisionFourImgSrc,
+        src: '/vision-4.png',
         title: 'Олон сүлжээт холбоо',
         text: 'АрдМааний нь Солана, Этериум, Байнанс Смарт Чэйн, Терра болон Полигон сүлжээнүүдэд зэрэг оршиж, сүлжээ хооронд шилжих боломжтой.'
     },
     {
-        src: VisionThreeImgSrc,
+        src: '/vision-3.png',
         title: 'DEX: Төвлөрсөн бус бирж',
         text: 'Монгол блокчэйн төслүүдийг дэлхийн тавцанд гаргах DEX байх болно. Гадаад орны хөрөнгө оруулагчид Монгол блокчэйн төслүүдэд хөрөнгө оруулах хамгийн хурдан, хялбар зам байх болно.'
     },
     {
-        src: VisionTwoImgSrc,
+        src: '/vision-2.png',
         title: 'DEFI: Санхүүгийн шинэ эрин',
         text: 'АрдМааний эзэмшигчид бүх шинэчлэлт, сайжруулалтанд саналаа өгч оролцох боломжтой.'
     },
@@ -235,23 +211,23 @@ const ourVision = [
 
 const socials = [
     {
-        src: IconFb,
+        src: '/icon-fb.png',
         url: 'https://www.facebook.com/ardmoney/'
     },
     {
-        src: IconIg,
+        src: '/icon-ig.png',
         url: 'https://www.instagram.com/ard.money/'
     },
     {
-        src: IconTelegram,
+        src: '/icon-telegram.png',
         url: 'https://t.me/ardmoneyofficial'
     },
     {
-        src: IconTwitter,
+        src: '/icon-twitter.png',
         url: 'https://twitter.com/ard_money'
     },
     {
-        src: IconDiscord,
+        src: '/icon-discord.png',
         url: 'https://discord.com/invite/2K5DDt2B'
     },
 ]

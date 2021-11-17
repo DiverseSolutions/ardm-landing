@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import HomeTwoSrc from '../assets/home-2.png'
 import MobileTab from './MobileTab';
 
 const tabs = [
@@ -72,7 +71,7 @@ export default function ProblemSolvingSection() {
                         }
                     </div>
                     <div className='w-1/2 flex justify-end'>
-                        <img src={HomeTwoSrc} alt="" />
+                        <img src='/home-2.png' alt="" />
                     </div>
                 </div>
             </div>

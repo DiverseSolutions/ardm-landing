@@ -1,19 +1,16 @@
 import React, {useState} from 'react'
-import PlayIcon from '../assets/iconPlay.png';
-import ThumbNailOne from '../assets/video-thumbnail-1.jpg'
-import ThumbNailTwo from '../assets/video-thumbnail-2.jpg'
 
 
 let videos = [
     {
         url: 'https://www.youtube.com/embed/0HMA_y4V_Qo',
         title: 'Dao болон Defi гэж юу вэ?',
-        thumbnail: ThumbNailOne
+        thumbnail: '/video-thumbnail-1.jpg'
     },
     {
         url: 'https://www.youtube.com/embed/3HESogLqS2Q',
         title: 'Dex гэж юу вэ?',
-        thumbnail: ThumbNailTwo
+        thumbnail: '/video-thumbnail-2.jpg'
     },
 ]
 
@@ -35,7 +32,7 @@ export default function IntroVideos() {
                                 <img className={`w-full mt-2  ${activeIndex === index ? 'opacity-100' : 'opacity-70'}`} src={video.thumbnail} alt="" />
                                 {
                                     activeIndex !== index ? (
-                                        <img className='absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-e-1/2 w-8 h-8' src={PlayIcon} alt="" />
+                                        <img className='absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-e-1/2 w-8 h-8' src='/iconPlay.png' alt="" />
                                     ) : (<></>)
                                 }
                             </div>

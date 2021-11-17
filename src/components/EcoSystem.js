@@ -1,5 +1,4 @@
 import React, {useState} from 'react'
-import LayerSrc from '../assets/layer.png'
 import MobileTab from './MobileTab';
 
 const tabs = [
@@ -86,11 +85,11 @@ export default function EcoSystem() {
                 />
             </div>
             <div className='flex md:w-10/12 mx-auto lg:hidden justify-center'>
-                <img src={LayerSrc} alt="layerPic" />
+                <img src={'/layer.png'} alt="layerPic" />
             </div>
             <div className='container mx-auto hidden lg:flex items-start '>
                 <div className='w-2/5 md:w-1/2 flex justify-center items-start'>
-                    <img className={'w-10/12 rotate-0 object-contain'} src={LayerSrc} alt="layerPic" />
+                    <img className={'w-10/12 rotate-0 object-contain'} src={'/layer.png'} alt="layerPic" />
                 </div>
                 <div className='w-3/5 md:w-1/2 flex justify-end'>
                     <div className='md:w-9/12 mt-10'>
