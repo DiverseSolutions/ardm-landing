@@ -51,7 +51,7 @@ export default function IntroVideos() {
                     <div className='flex flex-col items-stretch cursor-pointer font-medium mt-5'>
                         {
                             videos.map((video, index) => (
-                                <div key={index} className={`py-3 pl-10 mt-5 w-96 rounded-lg ${activeIndex === index ? 'text-ardmYellow' : 'hover:text-ardmYellow'}`}
+                                <div key={index} className={`py-4 pl-10 mt-5 w-96 rounded-lg ${activeIndex === index ? 'text-ardmYellow' : 'hover:text-ardmYellow'}`}
                                     style={{ boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25), inset 2px 2px 2px rgba(255, 255, 255, 0.25)' }}
                                     onClick={() => setActiveIndex(index)}
                                 >
