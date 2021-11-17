@@ -34,7 +34,7 @@ export default function Home() {
         <div className='text-white pt-22'>
             <div className=''>
                 <img src={HomeOneSrc} className='w-screen h-screen object-cover lg:hidden' style={{ objectPosition: '73% top' }} alt="" />
-                <img src={HomeOneSrc} className='w-screen hidden lg:block'alt="" />
+                <img src={HomeOneSrc} height='200' width='300' className='w-screen bg-ardmMainOne hidden lg:block'alt="" />
                 <div className=' lg:hidden flex h-screen flex-col justify-center absolute top-0'>
                     <h2 className='px-5 font-medium text-3xl md:text-4xl'>Монголын анхны DAO төсөл</h2>
                     <p className='px-5 my-6 mb-10 text-xl md:text-2xl font-thin'>Таны төвлөрсөн бус бие даасан санхүүгийн оролцооны гарц</p>
