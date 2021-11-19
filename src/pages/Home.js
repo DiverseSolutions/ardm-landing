@@ -160,6 +160,11 @@ const teamMembers = [
         rolePosition: 'Хамтын ажиллагаа'
     },
     {
+        name: 'Г. Нарангариг ',
+        src: '/profile-10.jpg',
+        rolePosition: 'Ахлах блокчэйн хөгжүүлэгч'
+    },
+    {
         name: 'М. Болортоль',
         src: '/profile-6.jpg',
         rolePosition: 'Хөгжүүлэгч'
@@ -177,11 +182,6 @@ const teamMembers = [
     {
         name: 'Г. Ууганбат',
         src: '/profile-9.jpg',
-        rolePosition: 'Хөгжүүлэгч'
-    },
-    {
-        name: 'Г. Нарангариг ',
-        src: '/profile-10.jpg',
         rolePosition: 'Хөгжүүлэгч'
     },
 ]
