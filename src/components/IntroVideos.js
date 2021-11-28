@@ -12,6 +12,11 @@ let videos = [
         title: 'Dex гэж юу вэ?',
         thumbnail: '/video-thumbnail-2.jpg'
     },
+    {
+        url: 'https://www.youtube.com/embed/Wfc6AJVA8O4',
+        title: 'АрдМааний гэж юу вэ?',
+        thumbnail: '/video-thumbnail-3.webp'
+    },
 ]
 
 export default function IntroVideos() {
