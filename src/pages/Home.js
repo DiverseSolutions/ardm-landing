@@ -161,7 +161,7 @@ const teamMembers = [
     },
     {
         name: 'Г. Нарангариг ',
-        src: '/profile.jpeg',
+        src: '/profile.jpg',
         rolePosition: 'Ахлах блокчэйн хөгжүүлэгч'
     },
     {
