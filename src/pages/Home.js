@@ -227,7 +227,7 @@ const socials = [
         url: 'https://twitter.com/ard_money'
     },
     {
-        src: '/icon-discord.png',
-        url: 'https://discord.com/invite/2K5DDt2B'
+        src: '/discord.png',
+        url: 'https://discord.gg/Zk872YRjxy'
     },
 ]
